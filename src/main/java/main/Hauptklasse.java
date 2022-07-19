@@ -30,7 +30,7 @@ public class Hauptklasse {
         int zahl = 12;
         double kommazahl = 1.45;
 
-        String token = "OTY0MTUxMzE5ODg1NjUxOTk5.GBZHmA.fiN9ai_gMNqaSEDTYRFVgB9PHI0n1bWRQjZyuk";
+        String token = "TOKEN";
 
         JDABuilder bauplan = JDABuilder.createDefault(token);
 
