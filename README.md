@@ -6,3 +6,9 @@ Source Code des Discord Bots aus meiner YouTube Tutorial Reihe!
 
 **How can I use the bot?**
 > First you have to extract the `TestBot3001` folder from the zip archive, which is generated for the download. Then simply move the folder in the directory you want to code in and open the folder witch the IDE of your choice! (Intellij is recommended)
+
+> Now you only have to replace the string shown below with your current bot token.
+
+```
+String token = "TOKEN";
+```
