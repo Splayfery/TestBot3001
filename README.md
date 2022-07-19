@@ -12,3 +12,5 @@ Source Code des Discord Bots aus meiner YouTube Tutorial Reihe!
 ```java
 String token = "TOKEN";
 ```
+
+You can watch the tutorials and videos about the bot at [My Channel](https://youtube.com/splayfer).
