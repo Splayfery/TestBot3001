@@ -12,3 +12,4 @@ Source Code des Discord Bots aus meiner YouTube Tutorial Reihe!
 ```diff
 @String@ token = "TOKEN";
 ```
+<span style="color: green"> Some green text </span>
