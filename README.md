@@ -12,3 +12,4 @@ Source Code des Discord Bots aus meiner YouTube Tutorial Reihe!
 ```diff
 @@String@@ token = +"TOKEN";
 ```
+- ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `#f03c15`
