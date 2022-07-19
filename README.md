@@ -10,6 +10,5 @@ Source Code des Discord Bots aus meiner YouTube Tutorial Reihe!
 > Now you only have to replace the string shown below with your current bot token.
 
 ```diff
-@@String@@ token = +"TOKEN";
+@@ String @@ token = +"TOKEN";
 ```
-- ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `#f03c15`
