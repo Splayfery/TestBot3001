@@ -9,6 +9,8 @@ import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import net.dv8tion.jda.api.interactions.components.buttons.Button;
 
+import java.util.concurrent.TimeUnit;
+
 public class ViewCommand extends ListenerAdapter {
 
     public void onMessageReceived (MessageReceivedEvent ereignis) {
@@ -58,7 +60,7 @@ public class ViewCommand extends ListenerAdapter {
 
                 String nutzerID = ereignis.getButton().getId().substring(3);
 
-                ereignis.getGuild().ban(User.fromId(nutzerID), 7, "Bann eines Admins").queue();
+                ereignis.getGuild().ban(User.fromId(nutzerID), 7, TimeUnit.DAYS).reason("Bann eines Admins").queue();
 
                 ereignis.reply("Bestrafung erfolgreich!").queue();
 
