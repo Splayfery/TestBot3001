@@ -14,6 +14,7 @@ import net.dv8tion.jda.api.requests.GatewayIntent;
 import net.dv8tion.jda.api.utils.ChunkingFilter;
 import net.dv8tion.jda.api.utils.MemberCachePolicy;
 import net.dv8tion.jda.api.utils.cache.CacheFlag;
+import support.ApplyListener;
 import willkommen.WillkommensNachricht;
 
 import javax.security.auth.login.LoginException;
@@ -32,7 +33,7 @@ public class Hauptklasse {
         int zahl = 12;
         double kommazahl = 1.45;
 
-        String token = "OTY0MTUxMzE5ODg1NjUxOTk5.GgHF1J.he-33iq8v8KQnQr7ZwPNGsejSgPj4uiyI8GSLc";
+        String token = "OTY0MTUxMzE5ODg1NjUxOTk5.Gw50dO.u7BDXffQH6saXWvzrfz700VMKsUZ8c8M3FkqkY";
 
         JDABuilder bauplan = JDABuilder.createDefault(token);
 
@@ -54,6 +55,9 @@ public class Hauptklasse {
         bauplan.addEventListeners(new BanCommand());
 
         bauplan.addEventListeners(new VerifySystem());
+
+        bauplan.addEventListeners(new ApplyListener());
+
         JDA bot = bauplan.build();
         System.out.println("Der Bot ist nun online!");
         System.out.println("Der Prefix des Bots lautet: " + prefix);
@@ -67,7 +71,9 @@ public class Hauptklasse {
                         .addOption(OptionType.STRING, "grund", "Grund für die Bestrafung!", true)
                         .addOption(OptionType.INTEGER, "deldays", "Zu löschende Nachrichten des Nutzers!", true),
 
-                Commands.context(Command.Type.USER, "Nutzer bannen")
+                Commands.context(Command.Type.USER, "Nutzer bannen"),
+
+                Commands.slash("setup-bewerbung", "Sende die Bewerbungsnachricht!")
 
                 ).queue();
 
